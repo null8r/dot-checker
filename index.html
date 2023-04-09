@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
     <link rel="stylesheet" href="/src/style.css">
     
@@ -46,8 +46,16 @@
 
     <div id="access">
       <h1>ドット抜けチェッカー</h1>
+      <br>
       <p>このページではお使いの<span class="device"></span>のディスプレイにドット抜けが無いか確認します。</p>
-      <p>全画面になり、タップ・クリックをするとディスプレイの色が変わります。</p>
+      <p>
+        全画面になり、タップ・クリックをするとディスプレイの色が<br>
+        「<span>白</span>→<span style="color: #f00;">赤</span>→<span style="color: #0f0;">緑</span>→<span style="color: #00f">青</span>→<span>黒</span>」に変わり、自動的にこの画面へ戻ります。
+      </p>
+      <p>
+        デバイスによっては、正しく動作しないことがあります。<br>
+        <a href="https://github.com/null8r/dot-checker/issues" rel="noopener noreferrer">Issues</a>よりお知らせください。
+      </p>
 
       <div id="access-button">
         <button id="ok" onclick="accessNow()">アクセスする</button>
@@ -55,7 +63,7 @@
       </div>
     </div>
 
-    <main onclick="nextColor()">
+    <main id="main" onclick="nextColor()">
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

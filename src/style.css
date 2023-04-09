@@ -5,9 +5,7 @@ body{
   font-family: "Noto Sans JP";
 }
 main{
-  padding: 50px;
-  padding-top: 70px;
-  padding-bottom: 150px;
+  height: 100vh;
 }
 a{
   text-decoration: none!important;
@@ -59,6 +57,7 @@ img.emoji{
   margin: auto;
   margin-top: 10px;
   color: #0de1bd;
+  background-color: #fff;
   border: solid 2px #0de1bd;
   border-radius: 3px;
   transition: .4s;
