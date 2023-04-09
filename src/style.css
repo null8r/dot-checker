@@ -1,0 +1,80 @@
+body{
+  background: #fff;
+  font-size: 20px;
+  font-size: clamp(20px, 5vw, 17px);
+  font-family: "Noto Sans JP";
+}
+main{
+  height: 100vh;
+}
+a{
+  text-decoration: none!important;
+  transition: transform 0.2s;
+}
+a:active{
+  transform: scale(0.95);
+}
+img.emoji{
+  height: 1em;
+  width: 1em;
+  margin: 0.05em 0.1em;
+  vertical-align: -0.1em;
+}
+.glass-filter{
+  backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.link{
+  width: 16px; 
+  height: 16px;
+}
+.sub-txt{
+  display: inline-block;
+  font-size: 50%;
+}
+#access,
+#nojs{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  padding: 30px;
+  padding-bottom: 70px;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  z-index: 1;
+}
+#ok,
+#ng{
+  display: inline-block;
+  width: 11em;
+  padding: 0.3em 1em;
+  margin: auto;
+  margin-top: 10px;
+  color: #0de1bd;
+  background-color: #fff;
+  border: solid 2px #0de1bd;
+  border-radius: 3px;
+  transition: .4s;
+}
+#ok{
+  color: #0f0;
+  border: solid 2px #0f0;
+}
+#ok:hover{
+  background: #0f0;
+  color: #000;
+}
+#ng{
+  color: #f00;
+  border: solid 2px #f00;
+}
+#ng:hover{
+  background: #f00;
+  color: #fff;
+}
